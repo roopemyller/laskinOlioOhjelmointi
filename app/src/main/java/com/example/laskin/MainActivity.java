@@ -25,24 +25,32 @@ public class MainActivity extends AppCompatActivity {
         if (!numInput1.getText().toString().isEmpty() && !numInput2.getText().toString().isEmpty()) {
             int tulos = Integer.parseInt(numInput1.getText().toString()) + Integer.parseInt((numInput2.getText().toString()));
             numOutput.setText(String.valueOf(tulos));
+        }else{
+            numOutput.setText("0");
         }
     }
     public void minus(View view){
         if (!numInput1.getText().toString().isEmpty() && !numInput2.getText().toString().isEmpty()) {
             int tulos = Integer.parseInt(numInput1.getText().toString()) - Integer.parseInt((numInput2.getText().toString()));
             numOutput.setText(String.valueOf(tulos));
+        }else{
+            numOutput.setText("0");
         }
     }
     public void multiply(View view){
         if (!numInput1.getText().toString().isEmpty() && !numInput2.getText().toString().isEmpty()) {
             int tulos = Integer.parseInt(numInput1.getText().toString()) * Integer.parseInt((numInput2.getText().toString()));
             numOutput.setText(String.valueOf(tulos));
+        }else{
+            numOutput.setText("0");
         }
     }
     public void divide(View view){
         if (!numInput1.getText().toString().isEmpty() && !numInput2.getText().toString().isEmpty()) {
             int tulos = Integer.parseInt(numInput1.getText().toString()) / Integer.parseInt((numInput2.getText().toString()));
             numOutput.setText(String.valueOf(tulos));
+        }else{
+            numOutput.setText("0");
         }
     }
 }
